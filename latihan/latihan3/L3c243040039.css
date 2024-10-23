@@ -1,0 +1,48 @@
+/* mengubah warna fecebook dan mengeser jadi di tengah */
+h1 {
+  color: darkblue;
+  font-size: 60px;
+  font-family: Comic Sans ms;
+  text-align: center;
+}
+/*mengeser teks ke kiri  */
+h4 {
+  text-align: right;
+}
+/* mengubah warna name:jadi putih */
+h3 {
+  a {
+    color: aliceblue;
+    font-variant: small-caps;
+  }
+  /* ketika tauchpad di arahkan ke name: akan langsung berubah jadi merah */
+  .hello:hover {
+    color: red;
+    font-variant: small-caps;
+  }
+}
+/* mengubah background jadi aqua */
+body {
+  background-color: aqua;
+  font-family: Georgia;
+}
+/*  mengubah warna teks paragraf 1 jadi goldenround */
+p {
+  color: goldenrod;
+  text-align: center;
+}
+/* mengubah warna teks paragraf 2 jadi hitam dan ketika tauchpad di arahkan ke mark zuckerberg akan berubah jadi biru */
+.warnahitam {
+  color: black;
+  .hello:hover {
+    font-family: arial;
+    background-color: blue;
+    color: aliceblue;
+    font-family: georgia;
+    font-weight: bold;
+  }
+  /* mentebalkan teks */
+  .hello {
+    font-weight: bold;
+  }
+}

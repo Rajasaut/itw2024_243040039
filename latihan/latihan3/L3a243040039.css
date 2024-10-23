@@ -1,0 +1,15 @@
+/* mengubah warna teks fecebook jadi darkblue */
+h1 {
+  color: darkblue;
+  font-size: 60px;
+  font-family: Comic Sans MS;
+}
+/* mengeser teks ke kiri */
+h4 {
+  text-align: right;
+}
+/* mengubah backround jadi warna aqua */
+body {
+  background-color: aqua;
+  font-family: Georgia;
+}

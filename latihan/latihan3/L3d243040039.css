@@ -1,0 +1,44 @@
+h1 {
+  color: darkblue;
+  font-size: 60px;
+  font-family: Comic Sans ms;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+h3 {
+  a {
+    color: red;
+    font-variant: small-caps;
+  }
+
+  .hello:hover {
+    color: darkblue;
+    font-variant: small-caps;
+  }
+}
+body {
+  background-image: url(background.png);
+  background-repeat: repeat-x;
+  font-family: Georgia;
+}
+p {
+  color: goldenrod;
+  text-align: center;
+}
+.warnahitam {
+  color: black;
+  .hello:hover {
+    background-color: blue;
+    font-family: arial;
+    color: aliceblue;
+    font-family: georgia;
+  }
+  .hello {
+    font-weight: bold;
+  }
+}
