@@ -1,0 +1,198 @@
+body {
+  font: 16px/28px arial, xx-large;
+  background-color: #eaeaea;
+  color: #333;
+  background-image: url(img/pattern.png);
+}
+
+.tob-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: lightskyblue;
+  border-bottom: 3px solid saddlebrown;
+}
+
+.container {
+  width: 960px;
+  margin: 80px auto;
+  background-color: rgba(233, 232, 169, 0.795);
+  padding-top: 3px;
+}
+
+.header .Judul {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.nav {
+  text-align: right;
+  font-weight: bold;
+  height: 70px;
+  background-color: rgb(0, 0, 0);
+
+  a:hover {
+    color: aqua;
+  }
+}
+
+.nav,
+a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.main .hello {
+  color: red;
+}
+
+.hello:hover {
+  color: blue;
+}
+
+.teknologi {
+  height: 300px;
+  background-image: url(img/teknologi.jpg);
+  background-size: cover;
+  background-position: 0 -190px;
+  border-bottom: 5px solid lightskyblue;
+  border-top: 5px solid salmon;
+}
+
+.main .industri1 {
+  height: 300px;
+  width: 300px;
+  background-image: url(img/industi01.png);
+  background-size: cover;
+  float: left;
+  margin-right: 15px;
+}
+
+.main .text1 {
+  text-align: justify;
+}
+
+.main .industri2 {
+  height: 300px;
+  width: 300px;
+  background-image: url(img/industri2.png);
+  background-size: cover;
+  float: left;
+  margin-right: 15px;
+}
+
+.main .text2 {
+  text-align: justify;
+}
+
+.main .industri3 {
+  height: 300px;
+  width: 300px;
+  background-image: url(img/Industri3.png);
+  background-size: cover;
+  float: left;
+  margin-right: 15px;
+}
+
+.main .text3 {
+  text-align: justify;
+}
+
+.main .industri4 {
+  height: 300px;
+  width: 300px;
+  background-image: url(img/industri4.png);
+  background-size: cover;
+  float: left;
+  margin-right: 15px;
+}
+
+.main .text4 {
+  text-align: justify;
+}
+
+/* sidebar */
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+.sidebar img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  padding: 10px;
+}
+
+.sidebar p {
+  font: 12px/18px arial;
+}
+
+.sidebar a {
+  color: blue;
+}
+
+a:hover {
+  color: red;
+}
+
+.border {
+  width: 290px;
+  height: 290px;
+  margin: 15px auto;
+  padding-left: 7px;
+  padding-top: 7px;
+  border: 5px solid rgb(99, 73, 1);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.footer {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12 px;
+  font-weight: bold;
+}
+
+/* clerfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  zoom: 1;
+}
