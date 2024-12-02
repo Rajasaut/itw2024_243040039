@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 1000px;
+  line-height: 1.75;
+  background-image: url(img/kotak-yelow.png);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-around;
+  color: black;
+  height: 50px;
+  align-items: center;
+}
+
+nav .logo {
+  font-family: "pacifico", cursive;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  font-style: oblique;
+  font-weight: bold;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animations */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 50vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* buat kolom */
+
+.container-satu {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  flex: 2;
+  order: 1;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+  padding: 10px;
+}
+
+.sidebar-satu img {
+  float: left;
+  padding: 10px;
+}
+
+.sidebar-satu p {
+  font: 12px/18px arial;
+}
+
+/*  untuk service / faktures */
+.container-dua {
+  max-width: 900px;
+  margin: 15px auto;
+  background-color: white;
+}
+
+.layanan {
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.layanan.satu {
+  background-color: rgb(117, 14, 165);
+}
+.layanan.dua {
+  background-color: rgb(33, 248, 13);
+}
+.layanan.tiga {
+  background-color: rgb(221, 22, 65);
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  .thumbnail {
+    width: 25%;
+  }
+}
+
+/* gallery */
+.container-tiga {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  width: 40%;
+}
+
+.thumbnail img {
+  width: 100%;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+/* sebuah prodak */
+.container-empat {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.card {
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card.besar {
+  transform: scale(1.12);
+}
+
+.card .header1 {
+  height: 150px;
+}
+.card .header2 {
+  height: 150px;
+}
+.card .header3 {
+  height: 150px;
+}
+
+.header1 {
+  background-image: url(img/1kecil.png.jpg);
+}
+.header2 {
+  background-image: url(img/2kecil.png.jpg);
+}
+.header3 {
+  background-image: url(img/3kecil.png.jpg);
+}
+
+/* sebuah produk bagian 2 */
+.container-lima {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.cardd {
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+
+.cardd .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.cardd.besarr {
+  transform: scale(1.12);
+}
+
+.cardd .header4 {
+  height: 150px;
+}
+.cardd .header5 {
+  height: 150px;
+}
+.cardd .header6 {
+  height: 150px;
+}
+
+.header4 {
+  background-image: url(img/4kecil.png.jpg);
+}
+.header5 {
+  background-image: url(img/5kecil.png.jpg);
+}
+.header6 {
+  background-image: url(img/6kecil.png.jpg);
+}
