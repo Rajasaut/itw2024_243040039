@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waktu Sekolah</title>
+    <link rel="stylesheet" href="T7243040039.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="Home">
+      <header class="header">
+        <div class="hero">
+          <h2 class="headling">Masa Sekolah</h2>
+          <p class="sub-heading">Hoodie & T-Shirt</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">foto wisuda sekolah</h4>
+          <p class="item">SMA ANGKASA HUSEIN</p>
+        </div>
+
+        <div class="features feature-2" id="superiority">
+          <h4 class="price">Foto bareng</h4>
+          <p class="item">KELAS MIPA B</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Masa sekolah</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#superiority">superiority</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="services" id="About">
+        <div class="service">
+          <div class="icon">🎓</div>
+          <h3>Komitmen</h3>
+          <p>
+            Pembaruan teknologi dan kurikulum sesuai perkembangan zaman.
+            Komitmen menjaga hubungan erat antara guru, siswa, dan orang tua
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🤩</div>
+          <h3>Program Unggulan</h3>
+          <p>
+            Kegiatan Ekstrakurikuler: Seni, olahraga, debat, klub coding, dll.
+            Program Internasional: Kerjasama dengan institusi global atau
+            pertukaran pelajar. Pendidikan Agama/Budi Pekerti: Fokus pada
+            pembentukan karakter siswa
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">👨🏻‍🤝‍👨🏻</div>
+          <h3>Pengenalan</h3>
+          <p>
+            "Membangun Generasi Berkarakter, Bersama Kami" "Pendidikan
+            Berkualitas yang Bertahan Sepanjang Masa" Tampilkan gambar siswa
+            yang sedang belajar, berprestasi, atau melakukan kegiatan
+            kolaboratif.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">🏫</div>
+          <h3>Kualitas Akademik Unggull</h3>
+          <p>
+            urikulum yang dirancang untuk relevan dengan perkembangan zaman.
+            Guru yang berkompeten dan berpengalaman. Teknologi pendukung
+            pembelajaran mutakhir.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">👨‍🎓👩‍🎓</div>
+          <h3>Pengembangan Karakter</h3>
+          <p>
+            Menanamkan nilai-nilai moral, etika, dan empati. Program pembentukan
+            jiwa kepemimpinan (leadership). Pendidikan berbasis budaya lokal dan
+            nasional.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery" id="Gallery">
+        <h2>Gallery</h2>
+        <img src="img/1.png.jpg" alt="" />
+        <img src="img/2.png.jpg" alt="" />
+        <img src="img/3.png.jpg" alt="" />
+        <img src="img/4.png.jpg" alt="" />
+        <img src="img/5.png.jpg" alt="" />
+        <img src="img/6.png.jpg" alt="" />
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
