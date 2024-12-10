@@ -56,7 +56,7 @@ span {
 /* untuk menu */
 .navlist {
   display: flex;
-  animation: Animasi-menu 0.5s ease forwards;
+  animation: Animasi-menu 0.9s ease forwards;
 }
 
 .navlist a {
@@ -110,6 +110,7 @@ section {
 .home-content h1 {
   font-size: var(--big-font);
   font-weight: 700;
+  animation: Animasi-nama 0.9s ease forwards;
 }
 
 .text {
@@ -121,6 +122,7 @@ section {
   display: inline-flex;
   margin: 0;
   vertical-align: top;
+  animation: Animasi-hobi 0.9s ease forwards;
 }
 
 .text h3 .hobi {
@@ -131,6 +133,7 @@ section {
 
 .text h3 .hobi .letter {
   transform-origin: center center 25px;
+  opacity: 0;
 }
 
 .text h3 .hobi .letter.out {
@@ -140,6 +143,7 @@ section {
 
 .text h3 .hobi .letter.in {
   transition: 0.38s ease;
+  opacity: 1;
 }
 
 text h3 .hobi .letter.behind {
@@ -149,6 +153,7 @@ text h3 .hobi .letter.behind {
 .home-content p {
   color: blanchedalmond;
   line-height: 1.6;
+  animation: Animasi-p 0.9s ease forwards;
 }
 
 .info-box {
@@ -330,3 +335,44 @@ a.btn:nth-child(2)::before {
     opacity: 1;
   }
 }
+
+@keyframes Animasi-nama {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes Animasi-p {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes Animasi-hobi {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+/* @keyframes Animasi-email {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+} */

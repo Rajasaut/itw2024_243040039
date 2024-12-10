@@ -29,7 +29,7 @@ let text = () => {
     letter.className = "letter behind";
     setTimeout(() => {
       letter.className = "letter in";
-    }, 340 + i * 80);
+    }, 340 + i * 80); // Waktu jeda per huruf
   });
   currentWordIndex =
     currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
