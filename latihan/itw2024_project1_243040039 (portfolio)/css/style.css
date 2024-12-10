@@ -18,7 +18,7 @@
   --bg-color: #000000;
   --secon-bg-color: #292e33;
   --big-font: 2.5rem;
-  --norma-font: 2rem;
+  --normal-font: 2rem;
   --neon--box--shadow: 0 0 0.5rem aqua;
   --h2-font: 3rem;
   --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
@@ -46,7 +46,7 @@ header {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
-  animation: animasi-logo 1s ease forwards;
+  animation: animasi-logo 2s ease forwards;
 }
 
 span {
@@ -56,7 +56,7 @@ span {
 /* untuk menu */
 .navlist {
   display: flex;
-  animation: Animasi-menu 0.9s ease forwards;
+  animation: Animasi-menu 2s ease forwards;
 }
 
 .navlist a {
@@ -110,7 +110,7 @@ section {
 .home-content h1 {
   font-size: var(--big-font);
   font-weight: 700;
-  animation: Animasi-nama 0.9s ease forwards;
+  animation: Animasi-nama 2s ease forwards;
 }
 
 .text {
@@ -122,7 +122,7 @@ section {
   display: inline-flex;
   margin: 0;
   vertical-align: top;
-  animation: Animasi-hobi 0.9s ease forwards;
+  animation: Animasi-hobi 2s ease forwards;
 }
 
 .text h3 .hobi {
@@ -153,7 +153,7 @@ text h3 .hobi .letter.behind {
 .home-content p {
   color: blanchedalmond;
   line-height: 1.6;
-  animation: Animasi-p 0.9s ease forwards;
+  animation: Animasi-p 2s ease forwards;
 }
 
 .info-box {
@@ -162,6 +162,7 @@ text h3 .hobi .letter.behind {
   align-items: center;
   width: 300px;
   margin: 1rem 0 2rem;
+  animation: Animasi-email 2s ease forwards;
 }
 
 .info-box h5 {
@@ -180,6 +181,7 @@ text h3 .hobi .letter.behind {
   justify-content: space-between;
   width: 320px;
   height: 45px;
+  animation: Animasi-box 2s ease forwards;
 }
 
 .btn-box a.btn {
@@ -242,6 +244,7 @@ a.btn:nth-child(2)::before {
   justify-content: space-between;
   width: 220px;
   height: 40px;
+  animation: Animasi-icon 2s ease forwards;
 }
 
 .social-icons a {
@@ -366,13 +369,139 @@ a.btn:nth-child(2)::before {
     opacity: 1;
   }
 }
-/* @keyframes Animasi-email {
+@keyframes Animasi-email {
   0% {
-    transform: translatex(-100px);
+    transform: translatex(100px);
     opacity: 0;
   }
   100% {
     transform: translatex(0px);
     opacity: 1;
   }
-} */
+}
+@keyframes Animasi-icon {
+  0% {
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+@keyframes Animasi-box {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+/* -------------------about secrion---------------- */
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: var(--secon-bg-color);
+}
+
+.About .img-about {
+  text-align: center;
+  position: relative;
+}
+
+.About .img-about img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 100%;
+  border: 5px solid aqua;
+  box-shadow: 20px 0 50px 0 aqua, -20px 0 50px 0 green;
+}
+
+.about-content span {
+  color: blanchedalmond;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-content h2 {
+  color: var(--hover-color);
+  font-weight: 700;
+  font-size: var(--normal-font);
+}
+
+.about-content h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0.2rem;
+}
+
+.about-content p {
+  color: aliceblue;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.info-about1,
+.info-about2,
+.info-about3 {
+  background-color: var(--bg-color);
+  font-size: 0.5rem;
+  position: absolute;
+  padding: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 70% 30% 65% 35% / 20% 30% 70% 80%;
+  display: block;
+  box-shadow: var(--neon--box--shadow);
+  border: 1px solid var(--hover-color);
+  outline: 2px solid var(--bg-color);
+  animation: morph 6s linear infinite;
+}
+
+/* animasi di kekeliling oleh lingkaran  */
+.info-about1 {
+  left: 3%;
+  top: 7%;
+}
+
+.info-about2 {
+  left: 80%;
+  top: 35%;
+}
+
+.info-about3 {
+  left: 5%;
+  top: 70%;
+}
+
+.img-about span {
+  color: var(--hover-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* animasi di sekeliling gambar  */
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 35% 30% 60% 30% / 40% 40% 60% 50%;
+  }
+  30% {
+    border-radius: 65% 25% 40% 50% / 30% 30% 70% 70%;
+  }
+  60% {
+    border-radius: 90% 30% 60% 90% / 100% 100% 60% 30%;
+  }
+
+  80% {
+    border-radius: 60% 30% 60% 25% / 20% 31% 60% 40%;
+  }
+}
