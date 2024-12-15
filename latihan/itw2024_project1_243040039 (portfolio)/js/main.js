@@ -37,3 +37,22 @@ let text = () => {
 
 text();
 setInterval(text, 3000);
+
+// untuk bagia aktive menu
+let menuLi = document.querySelectorAll("header ul li a");
+let section = document.querySelectorAll("section");
+
+function activeMenu() {
+  let len = section.length;
+  while (--len && window.scrollY + 97 < section[len].offsetTop) {}
+  menulis[len].classlist.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+
+// untuk bagian sticky menu
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("sticky", this.window.scrollBy > 50);
+});
