@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
 }
-
+/* untuk memilih semua kelas   */
 :root {
   --text-color: white;
   --hover-color: aqua;
@@ -34,6 +34,8 @@ body {
   color: var(--text-color);
 }
 
+/* untuk bagian header */
+/* untuk merapihkan daftar menu */
 header {
   position: fixed;
   top: 0;
@@ -45,8 +47,16 @@ header {
   justify-content: space-between;
   width: 100%;
   padding: 20px 10%;
+  background: var(--bg-color);
 }
 
+header.lengket {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--secon-bg-color);
+  padding: 12px 10%;
+}
+
+/* untuk mempercantik logo Raja */
 .logo {
   font-size: 26px;
   font-weight: 700;
@@ -312,7 +322,7 @@ text h3 .hobi .letter.behind {
   width: 100%;
 }
 
-/* mengatur foto  */
+/* untuk  mengatur foto  */
 .home-img {
   position: relative;
 }
@@ -321,8 +331,8 @@ text h3 .hobi .letter.behind {
 }
 
 .img-box img {
-  width: 100%;
-  max-width: 350px;
+  width: 1000%;
+  max-width: 300px;
   height: auto;
   border-radius: 100%;
   border: 3px solid aqua;
@@ -331,10 +341,10 @@ text h3 .hobi .letter.behind {
 /* membuat animasi cair */
 .animasi-cair {
   position: absolute;
-  width: 41%;
-  height: 36%;
+  width: 37%;
+  height: 38%;
   z-index: -1;
-  top: 23%;
+  top: 15%;
 }
 
 .animasi-cair:nth-child(2) {
@@ -437,7 +447,7 @@ text h3 .hobi .letter.behind {
   text-align: center;
   position: relative;
 }
-
+/* untuk membuat sahadw di sekeliling gambar  */
 .About .img-about img {
   max-width: 400px;
   height: auto;
@@ -472,6 +482,7 @@ text h3 .hobi .letter.behind {
   margin-bottom: 1.5rem;
 }
 
+/* untuk membuat bundaran di sekeliling gambar 2 */
 .info-about1,
 .info-about2,
 .info-about3 {
@@ -939,15 +950,15 @@ text h3 .hobi .letter.behind {
 }
 
 /* ----------------untuk footer website --------------*/
-.footer {
-  padding: 1.5rem 10%;
+footer {
   display: flex;
+  padding: 1.5rem 10%;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer p {
-  color: #555555;
+footer p {
+  color: #acacac;
 }
 
 footer a {
@@ -962,4 +973,44 @@ footer a {
 footer a i {
   font-size: 1rem;
   color: var(--secon-bg-color);
+}
+
+/* break points */
+@media (max-width: 991px) {
+  header,
+  header.lengket {
+    padding: 15px 5%;
+  }
+  footer {
+    padding: 15px 5%;
+  }
+  section {
+    padding: 50px 5%;
+  }
+  .navlist a {
+    padding: 8px 15px;
+  }
+
+  :root {
+    --big-font: 2.2rem;
+    --normal-font: 1.8rem;
+    --neon--box--shadow: 0 0 0.8rem aqua;
+    --h2-font: 3rem;
+  }
+
+  .home-content {
+    margin-top: 5rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  /* untuk ukuran 768 */
+  @media (max-width: 768) {
+    #menu-icon {
+      display: block;
+      transition: all 0.4s ease;
+    }
+  }
 }

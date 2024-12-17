@@ -54,5 +54,5 @@ window.addEventListener("scroll", activeMenu);
 // untuk bagian sticky menu
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", this.window.scrollBy > 50);
+  header.classList.toggle("lengket", window.scrollY > 50);
 });
