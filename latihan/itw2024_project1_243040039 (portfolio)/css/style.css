@@ -40,22 +40,20 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1000;
   border-bottom: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 10%;
-  background: var(--bg-color);
+  padding: 10px 10%;
 }
 
-header.lengket {
+header.sticky {
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--secon-bg-color);
   padding: 12px 10%;
 }
-
 /* untuk mempercantik logo Raja */
 .logo {
   font-size: 26px;
@@ -210,6 +208,7 @@ text h3 .hobi .letter.behind {
   color: blanchedalmond;
 }
 
+/* membuat animasi bagian hobi */
 .btn-box {
   display: inline-flex;
   justify-content: space-between;
@@ -434,7 +433,7 @@ text h3 .hobi .letter.behind {
   }
 }
 
-/* -------------------about secrion---------------- */
+/* -------------------bagian about secrion---------------- */
 .About {
   display: flex;
   justify-content: center;
@@ -590,6 +589,7 @@ text h3 .hobi .letter.behind {
   transform: translateY(-0.7rem);
 }
 
+/* mempercantik icon media */
 .service-icon {
   border: 2px solid var(--hover-color);
   padding: 2rem;
@@ -656,6 +656,7 @@ text h3 .hobi .letter.behind {
   position: relative;
 }
 
+/* membuat teks skill jadi cantik */
 .skills-bar .bar span {
   width: 50%;
   height: 100%;
@@ -666,6 +667,7 @@ text h3 .hobi .letter.behind {
   box-shadow: var(--neon--box--shadow);
 }
 
+/* membuat animasi skils jadi bagus */
 .skills-bar .bar .html {
   width: 60%;
   animation: html 3s;
@@ -744,6 +746,7 @@ text h3 .hobi .letter.behind {
   gap: 2rem;
 }
 
+/* mempercantik gambar jadi keren */
 .port-box {
   position: relative;
   border-radius: 15px;
@@ -771,6 +774,7 @@ text h3 .hobi .letter.behind {
   transition: 0.5s;
 }
 
+/* membuat animasi ketika mos di arahkan  */
 .port-content {
   position: absolute;
   bottom: 0;
@@ -978,7 +982,7 @@ footer a i {
 /* break points */
 @media (max-width: 991px) {
   header,
-  header.lengket {
+  header.sticky {
     padding: 15px 5%;
   }
   footer {
@@ -1005,12 +1009,46 @@ footer a i {
   .social-icons {
     margin-top: 2rem;
   }
+}
 
-  /* untuk ukuran 768 */
-  @media (max-width: 768) {
-    #menu-icon {
-      display: block;
-      transition: all 0.4s ease;
-    }
+/* untuk ukuran 768 */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    transition: all 0.4s ease;
+  }
+  #menu-icon.bx-x {
+    transform: rotate(-180deg);
+  }
+
+  .navlist {
+    display: flex;
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    padding: 0 5%;
+    transition: all 0.45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .navlist.open {
+    top: 100%;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  .home-image {
+    margin-bottom: 5rem;
   }
 }
