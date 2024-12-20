@@ -16,7 +16,7 @@
   --text-color: white;
   --hover-color: aqua;
   --bg-color: #000000;
-  --secon-bg-color: #292e33;
+  --secon-bg-color: #30383f;
   --big-font: 2.5rem;
   --normal-font: 2rem;
   --neon--box--shadow: 0 0 0.5rem aqua;
@@ -89,10 +89,6 @@ span {
     0 0 40px rgba(18, 247, 255, 0.7), 0 0 70px rgba(18, 247, 255, 0.7),
     0 0 80px rgba(18, 247, 255, 0.7), 0 0 100px rgba(18, 247, 255, 0.7),
     0 0 150px rgba(18, 247, 255, 0.7);
-}
-
-.navlist a.active {
-  color: nav(--hover-color);
 }
 
 /* Untuk mempercantik alat scrol  */
@@ -838,8 +834,9 @@ text h3 .hobi .letter.behind {
 
 /* ------------------bagina contact------------------ */
 .Contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   align-items: center;
   gap: 3rem;
   padding-left: 30px;
