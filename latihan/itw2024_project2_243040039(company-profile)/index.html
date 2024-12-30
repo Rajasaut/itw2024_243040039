@@ -2,8 +2,604 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- link rel -->
+    <link rel="stylesheet" href="js/style.js" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link rel -->
+
+    <title>company</title>
   </head>
-  <body></body>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-black navbar-dark shadow-sm fixed-top fluid"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><span class="text-warning">Warung</span> Erna</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent "
+          aria-expanded="false"
+          aria-label="Toggle navigation "
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- img-home -->
+    <div id="Home"></div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators" id="Home">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/home-1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Hello ada yang dapa saya bantu</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              exercitationem, quia dolorem tempore, eligendi illo consequuntur
+              minus
+            </p>
+            <p><a href="#" class="btn btn-warning mt3">Belanja</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/home-2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Hello ada yang dapa saya bantu</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              exercitationem, quia dolorem tempore, eligendi illo consequuntur
+              minus
+            </p>
+            <p><a href="#" class="btn btn-warning mt3">Belanja</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/home-3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Hello ada yang dapa saya bantu</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              exercitationem, quia dolorem tempore, eligendi illo consequuntur
+              minus
+            </p>
+            <p><a href="#" class="btn btn-warning mt3">Belanja</a></p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- bagian about -->
+    <section id="About" class="about section-padding bg-dark-subtle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img src="img/about-1.jpg" alt=" img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2>
+                Warung Yang bersih dan Ramah <br />
+                di Sukamulya
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam illo voluptas repudiandae inventore? In, totam
+                excepturi voluptatibus doloremque atque hic repellendus dicta
+                est? Dolorem nisi quod repellendus fugit ipsum et incidunt aut
+                expedita deserunt officia numquam laboriosam sed commodi
+                quisquam suscipit beatae voluptatibus aliquid debitis, quae iure
+                at consectetur repudiandae. lore
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+                officia doloribus praesentium consequuntur esse eius quibusdam
+                enim. Consequuntur beatae, dolorum blanditiis provident
+                laudantium error. Error earum dolorem quam facere expedita?
+              </p>
+              <a href="#" class="btn btn-warning">Belanja</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- produk -->
+    <section
+      class="bg-black d-flex flex-column align-items-center"
+      id="product"
+    >
+      <div class="container">
+        <div class="text-center text-white" data-aos="flip-left">
+          <h1 class="fw-bold m-4">Product</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+            id, aperiam explicabo odio non nostrum quasi delectus consequatur
+            atque exercitationem corporis, quibusdam sit cum ratione suscipit
+            culpa eos. Earum, quam.
+          </p>
+        </div>
+      </div>
+
+      <div class="container row g-3 mb-5 mx-5">
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-1.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Pewangi</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                sint?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-2.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Mie Indomi</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Itaque, aliquid.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-3.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Telor Ayam</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-4.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Air Mineral</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-5.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Beras</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-6.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Bumbu Dapur</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-7.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Gas</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-8.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Miyak</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-12" data-aos="fade-down">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/prodac-9.jpg" class="card-img-top img-fluid" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">Kue ikan</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At,
+                repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p><a href="#" class="btn btn-warning mt3">Beli Belanja</a></p>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section
+      class="margin-td d-flex flex-column align-items-center bg-dark-subtle"
+      id="Testimoni"
+    >
+      <div class="">
+        <div class="text-center" data-aos="flip-left">
+          <h1 class="fw-bold m-5">Testimoni</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+            id, aperiam explicabo odio non nostrum quasi delectus consequatur
+            atque exercitationem corporis, quibusdam sit cum ratione suscipit
+            culpa eos. Earum, quam.
+          </p>
+        </div>
+        <div class="row g-3 mt-3 mx-22">
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/51/50" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-1</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>1/1/24</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/50/51" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-2</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>30/12/23</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/50/50" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-3</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>2/1/24</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/52/52" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-4</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>2/1/24</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/52/51" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-5</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>2/1/24</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-12" data-aos="fade-down">
+            <div class="card border-warning">
+              <div class="container margin-td-text d-flex align-items-center">
+                <img src="https://picsum.photos/51/52" class="rounded-circle" />
+                <div class="container">
+                  <span>Pembeli-6</span>
+                </div>
+              </div>
+              <div class="container">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>2/1/24</span>
+              </div>
+              <div class="container margin-td-text d-flex">
+                <div class="card-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat cupiditate eveniet odio velit molestiae libero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian contact -->
+    <section id="Contact" class="contact section-padding bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center pb-5 text-white">
+              <h2>Contack</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                pariatur accusamus cum laboriosam omnis commodi. Eius molestiae
+                mollitia aperiam quas labore, illo ducimus cumque vel soluta cum
+                quo sed eligendi?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-12 p-0 pt-4 pb-4">
+            <form action="#" class="bg-light p-4.m-auto bg-black">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      required
+                      placeholder="Nama Lengkap"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      required
+                      placeholder="NO Ponsel"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      required
+                      placeholder="Email Kamu"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea
+                      rows="3"
+                      required
+                      class="form-control"
+                      placeholder="Pesan Anda"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button class="btn btn-warning btn-lg btn-block mt-3">
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian footer -->
+    <footer class="bg-warning p-2 text-center">
+      <div class="container">
+        <p class="text-white">All Right Reserved @Warung Erna</p>
+      </div>
+    </footer>
+
+    <!-- link scripy -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link script -->
+  </body>
 </html>
